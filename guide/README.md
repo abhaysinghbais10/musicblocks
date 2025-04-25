@@ -100,6 +100,26 @@ run. Look for `RUN LIVE` links.
 
 [Back to Table of Contents](#table-of-contents) | [Next Section (2. Making Sounds)](#2-making-sounds)
 
+[Program Blocks](#63-program-blocks)
+### 6.3 Program Blocks
+
+The **Program** blocks in Music Blocks allow for control over application state, saving/loading data, and interacting with the environment. These are especially useful for advanced users who want to implement features like save games, dictionaries, and persistent variables.
+
+| Block Name            | Description |
+|-----------------------|-------------|
+| `set heap`            | Stores a value in the heap, which is temporary memory. |
+| `load heap`           | Retrieves a value from the heap. |
+| `save heap`           | Saves the current heap state. |
+| `set dictionary`      | Stores a key-value pair into a dictionary. |
+| `load dictionary`     | Loads a dictionary from a file. |
+| `save dictionary`     | Saves a dictionary to a file. |
+| `save heap to App`    | Saves the heap into the app's local storage. |
+| `load heap from App`  | Loads the heap from the app's local storage. |
+| `open palette`        | Opens a selected block palette in the interface. |
+| `open project`        | Opens a saved project file into the workspace. |
+
+> 💡 These blocks are useful for building games, quizzes, or complex projects that require saving state or organizing data.
+
 Music Blocks is designed to run in a browser. Most of the development
 has been done in Chrome, but it should also work in Firefox, Opera,
 and some versions of Safari. You can run it from
